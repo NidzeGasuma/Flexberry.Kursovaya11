@@ -31,18 +31,18 @@ namespace IIS.Kursovaya1
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ЗагрФайлаE", new string[] {
             "ПутьФайла as \'Путь файла\'",
-            "ЭксФайлы",
-            "ЭксФайлы.Имя",
-            "ЭксФайлы.Дата",
-            "ЭксФайлы.Репозиторий"})]
-    [MasterViewDefineAttribute("ЗагрФайлаE", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+            "ЭксФайлы as \'Эксель\'",
+            "ЭксФайлы.Дата as \'дата\'",
+            "ЭксФайлы.Имя as \'Имя\'",
+            "ЭксФайлы.Репозиторий as \'Реп\'"})]
+    [MasterViewDefineAttribute("ЗагрФайлаE", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Combo, "", "")]
     [View("ЗагрФайлаL", new string[] {
             "ПутьФайла as \'Путь файла\'",
-            "ЭксФайлы",
-            "ЭксФайлы.Дата",
-            "ЭксФайлы.Имя",
-            "ЭксФайлы.Репозиторий"})]
-    [MasterViewDefineAttribute("ЗагрФайлаL", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
+            "ЭксФайлы as \'Эксель\'",
+            "ЭксФайлы.Дата as \'дата\'",
+            "ЭксФайлы.Имя as \'Имя\'",
+            "ЭксФайлы.Репозиторий as \'Реп\'"})]
+    [MasterViewDefineAttribute("ЗагрФайлаL", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Combo, "", "")]
     public class ЗагрФайла : ICSSoft.STORMNET.DataObject
     {
         

@@ -47,27 +47,27 @@
           "hidden": false,
           "attrs": [
             {
-              "name": "имя",
-              "caption": "",
+              "name": "дата",
+              "caption": "дата",
               "hidden": false,
               "index": 2
             },
             {
-              "name": "дата",
-              "caption": "",
+              "name": "имя",
+              "caption": "Имя",
               "hidden": false,
               "index": 3
             },
             {
               "name": "репозиторий",
-              "caption": "",
+              "caption": "Реп",
               "hidden": false,
               "index": 4
             }
           ],
           "index": 1,
-          "type": "standard",
-          "caption": "",
+          "type": "combo",
+          "caption": "Эксель",
           "name": "эксФайлы",
           "relatedTo": "i-i-s-kursovaya1-экс-файлы",
           "inverse": null
@@ -96,26 +96,26 @@
           "attrs": [
             {
               "name": "дата",
-              "caption": "",
+              "caption": "дата",
               "hidden": false,
               "index": 2
             },
             {
               "name": "имя",
-              "caption": "",
+              "caption": "Имя",
               "hidden": false,
               "index": 3
             },
             {
               "name": "репозиторий",
-              "caption": "",
+              "caption": "Реп",
               "hidden": false,
               "index": 4
             }
           ],
           "index": 1,
-          "type": "standard",
-          "caption": "",
+          "type": "combo",
+          "caption": "Эксель",
           "name": "эксФайлы",
           "relatedTo": "i-i-s-kursovaya1-экс-файлы",
           "inverse": null
