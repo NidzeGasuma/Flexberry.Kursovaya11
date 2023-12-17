@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Вид док",
+  "name": "IISKursovaya1ВидДокE",
+  "className": "ВидДокE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-вид-док",
+      "modelProjection": "ВидДокE"
+    }
+  ]
+}

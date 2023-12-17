@@ -1,0 +1,216 @@
+﻿{
+  "name": "IISKursovaya1Конверт",
+  "modelName": "i-i-s-kursovaya1-конверт",
+  "className": "Конверт",
+  "nameSpace": "IIS.Kursovaya1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "имяДок",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "видДок",
+      "relatedTo": "i-i-s-kursovaya1-вид-док",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "загрФайла",
+      "relatedTo": "i-i-s-kursovaya1-загр-файла",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "эксФайлы",
+      "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонвертE",
+      "modelName": "i-i-s-kursovaya1-конверт",
+      "attrs": [
+        {
+          "name": "имяДок",
+          "caption": "Имя док",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЭксФайлы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "репозиторий",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "эксФайлы",
+          "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗагрФайла",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "путьФайла",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "загрФайла",
+          "relatedTo": "i-i-s-kursovaya1-загр-файла",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВидДок",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "видДок",
+          "relatedTo": "i-i-s-kursovaya1-вид-док",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КонвертL",
+      "modelName": "i-i-s-kursovaya1-конверт",
+      "attrs": [
+        {
+          "name": "имяДок",
+          "caption": "Имя док",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЭксФайлы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "репозиторий",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "эксФайлы",
+          "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗагрФайла",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "путьФайла",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "загрФайла",
+          "relatedTo": "i-i-s-kursovaya1-загр-файла",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВидДок",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "видДок",
+          "relatedTo": "i-i-s-kursovaya1-вид-док",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

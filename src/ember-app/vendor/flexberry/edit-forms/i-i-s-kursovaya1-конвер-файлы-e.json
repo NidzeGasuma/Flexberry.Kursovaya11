@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Конвер файлы",
+  "name": "IISKursovaya1КонверФайлыE",
+  "className": "КонверФайлыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-конвер-файлы",
+      "modelProjection": "КонверФайлыE"
+    }
+  ]
+}

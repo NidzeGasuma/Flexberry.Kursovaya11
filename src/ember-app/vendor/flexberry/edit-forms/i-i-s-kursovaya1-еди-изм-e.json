@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Еди изм",
+  "name": "IISKursovaya1ЕдиИзмE",
+  "className": "ЕдиИзмE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-еди-изм",
+      "modelProjection": "ЕдиИзмE"
+    }
+  ]
+}

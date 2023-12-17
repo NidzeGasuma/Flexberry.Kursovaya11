@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-еди-изм-e",
+  "editForm": "i-i-s-kursovaya1-еди-изм-e",
+  "external": false,
+  "caption": "Еди изм",
+  "name": "IISKursovaya1ЕдиИзмL",
+  "className": "ЕдиИзмL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-еди-изм",
+      "modelProjection": "ЕдиИзмL"
+    }
+  ]
+}

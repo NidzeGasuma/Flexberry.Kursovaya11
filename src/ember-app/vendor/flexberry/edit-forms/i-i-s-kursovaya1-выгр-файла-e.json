@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Выгр файла",
+  "name": "IISKursovaya1ВыгрФайлаE",
+  "className": "ВыгрФайлаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-выгр-файла",
+      "modelProjection": "ВыгрФайлаE"
+    }
+  ]
+}

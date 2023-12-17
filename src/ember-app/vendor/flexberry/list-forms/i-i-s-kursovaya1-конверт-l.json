@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-конверт-e",
+  "editForm": "i-i-s-kursovaya1-конверт-e",
+  "external": false,
+  "caption": "Конверт",
+  "name": "IISKursovaya1КонвертL",
+  "className": "КонвертL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-конверт",
+      "modelProjection": "КонвертL"
+    }
+  ]
+}

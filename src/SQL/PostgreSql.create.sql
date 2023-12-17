@@ -1,0 +1,198 @@
+﻿
+
+
+
+
+CREATE TABLE ВидДок (
+ primaryKey UUID NOT NULL,
+ Наименование VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ЗагрФайла (
+ primaryKey UUID NOT NULL,
+ ПутьФайла VARCHAR(255) NULL,
+ ЭксФайлы UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Конверт (
+ primaryKey UUID NOT NULL,
+ ИмяДок VARCHAR(255) NULL,
+ ЗагрФайла UUID NOT NULL,
+ ЭксФайлы UUID NOT NULL,
+ ВидДок UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ЭксФайлы (
+ primaryKey UUID NOT NULL,
+ Дата TIMESTAMP(3) NULL,
+ Репозиторий VARCHAR(255) NULL,
+ Имя VARCHAR(255) NULL,
+ Размер INT NULL,
+ Расширение UUID NOT NULL,
+ ЕдиИзм UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ВыгрФайла (
+ primaryKey UUID NOT NULL,
+ ИмяФайла VARCHAR(255) NULL,
+ Конверт UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ЕдиИзм (
+ primaryKey UUID NOT NULL,
+ Наименование VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE КонверФайлы (
+ primaryKey UUID NOT NULL,
+ Репозиторий VARCHAR(255) NULL,
+ ВыгрФайла UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Расширение (
+ primaryKey UUID NOT NULL,
+ Наименование VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMNETLOCKDATA (
+ LockKey VARCHAR(300) NOT NULL,
+ UserName VARCHAR(300) NOT NULL,
+ LockDate TIMESTAMP(3) NULL,
+ PRIMARY KEY (LockKey));
+
+
+CREATE TABLE STORMSETTINGS (
+ primaryKey UUID NOT NULL,
+ Module VARCHAR(1000) NULL,
+ Name VARCHAR(255) NULL,
+ Value TEXT NULL,
+ "User" VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMAdvLimit (
+ primaryKey UUID NOT NULL,
+ "User" VARCHAR(255) NULL,
+ Published BOOLEAN NULL,
+ Module VARCHAR(255) NULL,
+ Name VARCHAR(255) NULL,
+ Value TEXT NULL,
+ HotKeyData INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERSETTING (
+ primaryKey UUID NOT NULL,
+ Name VARCHAR(255) NOT NULL,
+ DataObjectView VARCHAR(255) NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMWEBSEARCH (
+ primaryKey UUID NOT NULL,
+ Name VARCHAR(255) NOT NULL,
+ "Order" INT NOT NULL,
+ PresentView VARCHAR(255) NOT NULL,
+ DetailedView VARCHAR(255) NOT NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERDETAIL (
+ primaryKey UUID NOT NULL,
+ Caption VARCHAR(255) NOT NULL,
+ DataObjectView VARCHAR(255) NOT NULL,
+ ConnectMasterProp VARCHAR(255) NOT NULL,
+ OwnerConnectProp VARCHAR(255) NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE STORMFILTERLOOKUP (
+ primaryKey UUID NOT NULL,
+ DataObjectType VARCHAR(255) NOT NULL,
+ Container VARCHAR(255) NULL,
+ ContainerTag VARCHAR(255) NULL,
+ FieldsToView VARCHAR(255) NULL,
+ FilterSetting_m0 UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE UserSetting (
+ primaryKey UUID NOT NULL,
+ AppName VARCHAR(256) NULL,
+ UserName VARCHAR(512) NULL,
+ UserGuid UUID NULL,
+ ModuleName VARCHAR(1024) NULL,
+ ModuleGuid UUID NULL,
+ SettName VARCHAR(256) NULL,
+ SettGuid UUID NULL,
+ SettLastAccessTime TIMESTAMP(3) NULL,
+ StrVal VARCHAR(256) NULL,
+ TxtVal TEXT NULL,
+ IntVal INT NULL,
+ BoolVal BOOLEAN NULL,
+ GuidVal UUID NULL,
+ DecimalVal DECIMAL(20,10) NULL,
+ DateTimeVal TIMESTAMP(3) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE ApplicationLog (
+ primaryKey UUID NOT NULL,
+ Category VARCHAR(64) NULL,
+ EventId INT NULL,
+ Priority INT NULL,
+ Severity VARCHAR(32) NULL,
+ Title VARCHAR(256) NULL,
+ Timestamp TIMESTAMP(3) NULL,
+ MachineName VARCHAR(32) NULL,
+ AppDomainName VARCHAR(512) NULL,
+ ProcessId VARCHAR(256) NULL,
+ ProcessName VARCHAR(512) NULL,
+ ThreadName VARCHAR(512) NULL,
+ Win32ThreadId VARCHAR(128) NULL,
+ Message VARCHAR(2500) NULL,
+ FormattedMessage TEXT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+
+ ALTER TABLE ЗагрФайла ADD CONSTRAINT FK36632f0404af0a516cad0bcff12f7beb8d7c4033 FOREIGN KEY (ЭксФайлы) REFERENCES ЭксФайлы; 
+CREATE INDEX Index36632f0404af0a516cad0bcff12f7beb8d7c4033 on ЗагрФайла (ЭксФайлы); 
+
+ ALTER TABLE Конверт ADD CONSTRAINT FK039d04b5a761e827c13ea77bccea1655d9d41125 FOREIGN KEY (ЗагрФайла) REFERENCES ЗагрФайла; 
+CREATE INDEX Index039d04b5a761e827c13ea77bccea1655d9d41125 on Конверт (ЗагрФайла); 
+
+ ALTER TABLE Конверт ADD CONSTRAINT FK3df140db012183b014e3db09ab42f94de7ac6f8b FOREIGN KEY (ЭксФайлы) REFERENCES ЭксФайлы; 
+CREATE INDEX Index3df140db012183b014e3db09ab42f94de7ac6f8b on Конверт (ЭксФайлы); 
+
+ ALTER TABLE Конверт ADD CONSTRAINT FK178dfc8367f5d73cf89cf6b94a0f3a1a7b2eaf7e FOREIGN KEY (ВидДок) REFERENCES ВидДок; 
+CREATE INDEX Index178dfc8367f5d73cf89cf6b94a0f3a1a7b2eaf7e on Конверт (ВидДок); 
+
+ ALTER TABLE ЭксФайлы ADD CONSTRAINT FKddf98e284e23759457da50ae2d2fada8333efc41 FOREIGN KEY (Расширение) REFERENCES Расширение; 
+CREATE INDEX Indexddf98e284e23759457da50ae2d2fada8333efc41 on ЭксФайлы (Расширение); 
+
+ ALTER TABLE ЭксФайлы ADD CONSTRAINT FK2e21bafbbeb0332790a549a12c1a1f3bed868b40 FOREIGN KEY (ЕдиИзм) REFERENCES ЕдиИзм; 
+CREATE INDEX Index2e21bafbbeb0332790a549a12c1a1f3bed868b40 on ЭксФайлы (ЕдиИзм); 
+
+ ALTER TABLE ВыгрФайла ADD CONSTRAINT FK188b0e462d25252aee34c8de5258fe07b091138b FOREIGN KEY (Конверт) REFERENCES Конверт; 
+CREATE INDEX Index188b0e462d25252aee34c8de5258fe07b091138b on ВыгрФайла (Конверт); 
+
+ ALTER TABLE КонверФайлы ADD CONSTRAINT FKae91d6c1e24c5fb3f43dbca9b97ad9dca69697f0 FOREIGN KEY (ВыгрФайла) REFERENCES ВыгрФайла; 
+CREATE INDEX Indexae91d6c1e24c5fb3f43dbca9b97ad9dca69697f0 on КонверФайлы (ВыгрФайла); 
+
+ ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+
+ ALTER TABLE STORMFILTERDETAIL ADD CONSTRAINT FK921d16269835017e2a0d0e29ad6fb175454a70d0 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+
+ ALTER TABLE STORMFILTERLOOKUP ADD CONSTRAINT FKce38ef0db3f01a53acaa49fed8853fb941ad47ba FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
+

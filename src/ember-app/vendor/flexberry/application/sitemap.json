@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Kursovaya1",
+  "applicationTitle": "Kursovaya1",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya1",
+      "caption": "Kursovaya1",
+      "title": "Kursovaya1",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya1-вид-док-l",
+          "menuName": null,
+          "caption": "Вид док",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-загр-файла-l",
+          "menuName": null,
+          "caption": "Загр файла",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-конверт-l",
+          "menuName": null,
+          "caption": "Конверт",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-экс-файлы-l",
+          "menuName": null,
+          "caption": "Экс файлы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-выгр-файла-l",
+          "menuName": null,
+          "caption": "Выгр файла",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-еди-изм-l",
+          "menuName": null,
+          "caption": "Еди изм",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-конвер-файлы-l",
+          "menuName": null,
+          "caption": "Конвер файлы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya1-расширение-l",
+          "menuName": null,
+          "caption": "Расширение",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

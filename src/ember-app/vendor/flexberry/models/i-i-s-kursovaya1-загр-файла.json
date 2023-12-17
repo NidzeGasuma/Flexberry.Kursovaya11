@@ -1,0 +1,130 @@
+﻿{
+  "name": "IISKursovaya1ЗагрФайла",
+  "modelName": "i-i-s-kursovaya1-загр-файла",
+  "className": "ЗагрФайла",
+  "nameSpace": "IIS.Kursovaya1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "путьФайла",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "эксФайлы",
+      "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗагрФайлаE",
+      "modelName": "i-i-s-kursovaya1-загр-файла",
+      "attrs": [
+        {
+          "name": "путьФайла",
+          "caption": "Путь файла",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЭксФайлы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "дата",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "репозиторий",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "эксФайлы",
+          "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗагрФайлаL",
+      "modelName": "i-i-s-kursovaya1-загр-файла",
+      "attrs": [
+        {
+          "name": "путьФайла",
+          "caption": "Путь файла",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЭксФайлы",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "имя",
+              "caption": "",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "репозиторий",
+              "caption": "",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "эксФайлы",
+          "relatedTo": "i-i-s-kursovaya1-экс-файлы",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-выгр-файла-e",
+  "editForm": "i-i-s-kursovaya1-выгр-файла-e",
+  "external": false,
+  "caption": "Выгр файла",
+  "name": "IISKursovaya1ВыгрФайлаL",
+  "className": "ВыгрФайлаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-выгр-файла",
+      "modelProjection": "ВыгрФайлаL"
+    }
+  ]
+}

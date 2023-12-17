@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Загр файла",
+  "name": "IISKursovaya1ЗагрФайлаE",
+  "className": "ЗагрФайлаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-загр-файла",
+      "modelProjection": "ЗагрФайлаE"
+    }
+  ]
+}

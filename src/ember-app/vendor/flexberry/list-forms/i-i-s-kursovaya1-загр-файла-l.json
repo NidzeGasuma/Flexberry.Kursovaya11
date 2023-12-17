@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-загр-файла-e",
+  "editForm": "i-i-s-kursovaya1-загр-файла-e",
+  "external": false,
+  "caption": "Загр файла",
+  "name": "IISKursovaya1ЗагрФайлаL",
+  "className": "ЗагрФайлаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-загр-файла",
+      "modelProjection": "ЗагрФайлаL"
+    }
+  ]
+}

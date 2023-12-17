@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Конверт",
+  "name": "IISKursovaya1КонвертE",
+  "className": "КонвертE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-конверт",
+      "modelProjection": "КонвертE"
+    }
+  ]
+}

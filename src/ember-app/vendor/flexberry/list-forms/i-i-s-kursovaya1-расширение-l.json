@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-расширение-e",
+  "editForm": "i-i-s-kursovaya1-расширение-e",
+  "external": false,
+  "caption": "Расширение",
+  "name": "IISKursovaya1РасширениеL",
+  "className": "РасширениеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-расширение",
+      "modelProjection": "РасширениеL"
+    }
+  ]
+}

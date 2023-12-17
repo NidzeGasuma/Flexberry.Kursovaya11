@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISKursovaya1КонверФайлы",
+  "modelName": "i-i-s-kursovaya1-конвер-файлы",
+  "className": "КонверФайлы",
+  "nameSpace": "IIS.Kursovaya1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "репозиторий",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "выгрФайла",
+      "relatedTo": "i-i-s-kursovaya1-выгр-файла",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонверФайлыE",
+      "modelName": "i-i-s-kursovaya1-конвер-файлы",
+      "attrs": [
+        {
+          "name": "репозиторий",
+          "caption": "Репозиторий",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВыгрФайла",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имяФайла",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "выгрФайла",
+          "relatedTo": "i-i-s-kursovaya1-выгр-файла",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КонверФайлыL",
+      "modelName": "i-i-s-kursovaya1-конвер-файлы",
+      "attrs": [
+        {
+          "name": "репозиторий",
+          "caption": "Репозиторий",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВыгрФайла",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "имяФайла",
+              "caption": "",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "",
+          "name": "выгрФайла",
+          "relatedTo": "i-i-s-kursovaya1-выгр-файла",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

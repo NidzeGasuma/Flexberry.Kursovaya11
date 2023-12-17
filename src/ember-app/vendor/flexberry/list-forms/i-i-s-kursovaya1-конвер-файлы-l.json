@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-конвер-файлы-e",
+  "editForm": "i-i-s-kursovaya1-конвер-файлы-e",
+  "external": false,
+  "caption": "Конвер файлы",
+  "name": "IISKursovaya1КонверФайлыL",
+  "className": "КонверФайлыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-конвер-файлы",
+      "modelProjection": "КонверФайлыL"
+    }
+  ]
+}

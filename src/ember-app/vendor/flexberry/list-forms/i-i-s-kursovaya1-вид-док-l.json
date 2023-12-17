@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya1-вид-док-e",
+  "editForm": "i-i-s-kursovaya1-вид-док-e",
+  "external": false,
+  "caption": "Вид док",
+  "name": "IISKursovaya1ВидДокL",
+  "className": "ВидДокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya1-вид-док",
+      "modelProjection": "ВидДокL"
+    }
+  ]
+}
