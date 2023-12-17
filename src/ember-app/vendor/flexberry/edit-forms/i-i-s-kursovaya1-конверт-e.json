@@ -1,5 +1,30 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЭксФайлы",
+      "projection": "ЭксФайлыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗагрФайла",
+      "projection": "ЗагрФайлаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВидДок",
+      "projection": "ВидДокL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "Конверт",
   "name": "IISKursovaya1КонвертE",

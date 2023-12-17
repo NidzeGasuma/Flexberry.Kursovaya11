@@ -74,4 +74,52 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.видДок "наименование" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya1-конверт-e.эксФайлы-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.эксФайлы
+      relationName="эксФайлы"
+      projection="ЭксФайлыL"
+      title=(t "forms.i-i-s-kursovaya1-конверт-e.эксФайлы-caption")
+      readonly=readonly
+      componentName="эксФайлыLookup"
+      class=(if (v-get validationModel "эксФайлы" "isInvalid") "error")
+      data-test-i-i-s-kursovaya1-конверт-e-эксФайлы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "эксФайлы" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya1-конверт-e.загрФайла-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.загрФайла
+      relationName="загрФайла"
+      projection="ЗагрФайлаL"
+      title=(t "forms.i-i-s-kursovaya1-конверт-e.загрФайла-caption")
+      readonly=readonly
+      componentName="загрФайлаLookup"
+      class=(if (v-get validationModel "загрФайла" "isInvalid") "error")
+      data-test-i-i-s-kursovaya1-конверт-e-загрФайла=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "загрФайла" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya1-конверт-e.видДок-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.видДок
+      relationName="видДок"
+      projection="ВидДокL"
+      title=(t "forms.i-i-s-kursovaya1-конверт-e.видДок-caption")
+      readonly=readonly
+      componentName="видДокLookup"
+      class=(if (v-get validationModel "видДок" "isInvalid") "error")
+      data-test-i-i-s-kursovaya1-конверт-e-видДок=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "видДок" "message")}}
+  </div>
 </form>

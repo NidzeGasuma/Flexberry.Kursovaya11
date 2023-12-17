@@ -47,13 +47,13 @@ export let defineProjections = function (modelClass) {
     эксФайлы: belongsTo('i-i-s-kursovaya1-экс-файлы', '', {
       имя: attr('', { index: 1 }),
       репозиторий: attr('', { index: 3 })
-    }, { index: -1, hidden: true }),
+    }, { index: 5 }),
     загрФайла: belongsTo('i-i-s-kursovaya1-загр-файла', '', {
       путьФайла: attr('', { index: 2 })
-    }, { index: -1, hidden: true }),
+    }, { index: 6 }),
     видДок: belongsTo('i-i-s-kursovaya1-вид-док', '', {
       наименование: attr('', { index: 4 })
-    }, { index: -1, hidden: true })
+    }, { index: 7 })
   });
 
   modelClass.defineProjection('КонвертL', 'i-i-s-kursovaya1-конверт', {
@@ -61,12 +61,12 @@ export let defineProjections = function (modelClass) {
     эксФайлы: belongsTo('i-i-s-kursovaya1-экс-файлы', '', {
       имя: attr('', { index: 1 }),
       репозиторий: attr('', { index: 3 })
-    }, { index: -1, hidden: true }),
+    }, { index: 7 }),
     загрФайла: belongsTo('i-i-s-kursovaya1-загр-файла', '', {
       путьФайла: attr('', { index: 2 })
-    }, { index: -1, hidden: true }),
+    }, { index: 6 }),
     видДок: belongsTo('i-i-s-kursovaya1-вид-док', '', {
       наименование: attr('', { index: 4 })
-    }, { index: -1, hidden: true })
+    }, { index: 5 })
   });
 };

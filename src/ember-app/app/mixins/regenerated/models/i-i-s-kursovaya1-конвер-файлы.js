@@ -30,13 +30,13 @@ export let defineProjections = function (modelClass) {
     репозиторий: attr('Репозиторий', { index: 0 }),
     выгрФайла: belongsTo('i-i-s-kursovaya1-выгр-файла', '', {
       имяФайла: attr('', { index: 1 })
-    }, { index: -1, hidden: true })
+    }, { index: 2 })
   });
 
   modelClass.defineProjection('КонверФайлыL', 'i-i-s-kursovaya1-конвер-файлы', {
     репозиторий: attr('Репозиторий', { index: 0 }),
     выгрФайла: belongsTo('i-i-s-kursovaya1-выгр-файла', '', {
       имяФайла: attr('', { index: 1 })
-    }, { index: -1, hidden: true })
+    }, { index: 2 })
   });
 };

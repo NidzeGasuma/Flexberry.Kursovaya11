@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВыгрФайла",
+      "projection": "ВыгрФайлаL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "Конвер файлы",
   "name": "IISKursovaya1КонверФайлыE",

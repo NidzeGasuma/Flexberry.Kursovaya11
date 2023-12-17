@@ -73,7 +73,7 @@
               "index": 3
             }
           ],
-          "index": -1,
+          "index": 5,
           "type": "default",
           "caption": "",
           "name": "эксФайлы",
@@ -94,7 +94,7 @@
               "index": 2
             }
           ],
-          "index": -1,
+          "index": 6,
           "type": "default",
           "caption": "",
           "name": "загрФайла",
@@ -115,7 +115,7 @@
               "index": 4
             }
           ],
-          "index": -1,
+          "index": 7,
           "type": "default",
           "caption": "",
           "name": "видДок",
@@ -157,7 +157,7 @@
               "index": 3
             }
           ],
-          "index": -1,
+          "index": 7,
           "type": "default",
           "caption": "",
           "name": "эксФайлы",
@@ -178,7 +178,7 @@
               "index": 2
             }
           ],
-          "index": -1,
+          "index": 6,
           "type": "default",
           "caption": "",
           "name": "загрФайла",
@@ -199,7 +199,7 @@
               "index": 4
             }
           ],
-          "index": -1,
+          "index": 5,
           "type": "default",
           "caption": "",
           "name": "видДок",

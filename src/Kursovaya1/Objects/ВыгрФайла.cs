@@ -31,10 +31,12 @@ namespace IIS.Kursovaya1
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ВыгрФайлаE", new string[] {
             "ИмяФайла as \'Имя файла\'",
-            "Конверт.ИмяДок"})]
+            "Конверт.ИмяДок",
+            "Конверт"})]
     [View("ВыгрФайлаL", new string[] {
             "ИмяФайла as \'Имя файла\'",
-            "Конверт.ИмяДок"})]
+            "Конверт.ИмяДок",
+            "Конверт"})]
     public class ВыгрФайла : ICSSoft.STORMNET.DataObject
     {
         

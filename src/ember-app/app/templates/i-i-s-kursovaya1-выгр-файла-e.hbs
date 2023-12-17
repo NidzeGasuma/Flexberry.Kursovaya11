@@ -44,4 +44,20 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.конверт "имяДок" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya1-выгр-файла-e.конверт-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.конверт
+      relationName="конверт"
+      projection="КонвертL"
+      title=(t "forms.i-i-s-kursovaya1-выгр-файла-e.конверт-caption")
+      readonly=readonly
+      componentName="конвертLookup"
+      class=(if (v-get validationModel "конверт" "isInvalid") "error")
+      data-test-i-i-s-kursovaya1-выгр-файла-e-конверт=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "конверт" "message")}}
+  </div>
 </form>

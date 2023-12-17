@@ -35,6 +35,22 @@
     {{flexberry-validationmessage error=(v-get validationModel "путьФайла" "message")}}
   </div>
   <div class="field">
+    <label>{{t "forms.i-i-s-kursovaya1-загр-файла-e.эксФайлы-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.эксФайлы
+      relationName="эксФайлы"
+      projection="ЭксФайлыL"
+      title=(t "forms.i-i-s-kursovaya1-загр-файла-e.эксФайлы-caption")
+      readonly=readonly
+      componentName="эксФайлыLookup"
+      class=(if (v-get validationModel "эксФайлы" "isInvalid") "error")
+      data-test-i-i-s-kursovaya1-загр-файла-e-эксФайлы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "эксФайлы" "message")}}
+  </div>
+  <div class="field">
     {{flexberry-field
       readonly=true
       value=model.эксФайлы.имя
