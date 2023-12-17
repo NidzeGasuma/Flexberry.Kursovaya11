@@ -49,24 +49,24 @@
             {
               "name": "имя",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 2
             },
             {
               "name": "дата",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 3
             },
             {
               "name": "репозиторий",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 4
             }
           ],
           "index": 1,
-          "type": "default",
+          "type": "standard",
           "caption": "",
           "name": "эксФайлы",
           "relatedTo": "i-i-s-kursovaya1-экс-файлы",
@@ -97,24 +97,24 @@
             {
               "name": "дата",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 2
             },
             {
               "name": "имя",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 3
             },
             {
               "name": "репозиторий",
               "caption": "",
-              "hidden": true,
+              "hidden": false,
               "index": 4
             }
           ],
           "index": 1,
-          "type": "default",
+          "type": "standard",
           "caption": "",
           "name": "эксФайлы",
           "relatedTo": "i-i-s-kursovaya1-экс-файлы",

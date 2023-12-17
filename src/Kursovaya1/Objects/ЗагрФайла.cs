@@ -34,19 +34,15 @@ namespace IIS.Kursovaya1
             "ЭксФайлы",
             "ЭксФайлы.Имя",
             "ЭксФайлы.Дата",
-            "ЭксФайлы.Репозиторий"}, Hidden=new string[] {
-            "ЭксФайлы.Имя",
-            "ЭксФайлы.Дата",
             "ЭксФайлы.Репозиторий"})]
+    [MasterViewDefineAttribute("ЗагрФайлаE", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
     [View("ЗагрФайлаL", new string[] {
             "ПутьФайла as \'Путь файла\'",
             "ЭксФайлы",
             "ЭксФайлы.Дата",
             "ЭксФайлы.Имя",
-            "ЭксФайлы.Репозиторий"}, Hidden=new string[] {
-            "ЭксФайлы.Дата",
-            "ЭксФайлы.Имя",
             "ЭксФайлы.Репозиторий"})]
+    [MasterViewDefineAttribute("ЗагрФайлаL", "ЭксФайлы", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "")]
     public class ЗагрФайла : ICSSoft.STORMNET.DataObject
     {
         

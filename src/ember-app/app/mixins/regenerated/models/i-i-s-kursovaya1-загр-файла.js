@@ -29,18 +29,18 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ЗагрФайлаE', 'i-i-s-kursovaya1-загр-файла', {
     путьФайла: attr('Путь файла', { index: 0 }),
     эксФайлы: belongsTo('i-i-s-kursovaya1-экс-файлы', '', {
-      имя: attr('', { index: 2, hidden: true }),
-      дата: attr('', { index: 3, hidden: true }),
-      репозиторий: attr('', { index: 4, hidden: true })
+      имя: attr('', { index: 2 }),
+      дата: attr('', { index: 3 }),
+      репозиторий: attr('', { index: 4 })
     }, { index: 1 })
   });
 
   modelClass.defineProjection('ЗагрФайлаL', 'i-i-s-kursovaya1-загр-файла', {
     путьФайла: attr('Путь файла', { index: 0 }),
     эксФайлы: belongsTo('i-i-s-kursovaya1-экс-файлы', '', {
-      дата: attr('', { index: 2, hidden: true }),
-      имя: attr('', { index: 3, hidden: true }),
-      репозиторий: attr('', { index: 4, hidden: true })
+      дата: attr('', { index: 2 }),
+      имя: attr('', { index: 3 }),
+      репозиторий: attr('', { index: 4 })
     }, { index: 1 })
   });
 };
