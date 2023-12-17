@@ -28,25 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya1-вид-док-l',
             caption: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-вид-док-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-вид-док-l.title'),
-            icon: 'table',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-kursovaya1-загр-файла-l',
             caption: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-загр-файла-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-загр-файла-l.title'),
-            icon: 'folder',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursovaya1-конверт-l',
             caption: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-конверт-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-конверт-l.title'),
-            icon: 'building',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-kursovaya1-экс-файлы-l',
             caption: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-экс-файлы-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-экс-файлы-l.title'),
-            icon: 'archive',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-kursovaya1-выгр-файла-l',
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya1-еди-изм-l',
             caption: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-еди-изм-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya1.i-i-s-kursovaya1-еди-изм-l.title'),
-            icon: 'briefcase',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-kursovaya1-конвер-файлы-l',
